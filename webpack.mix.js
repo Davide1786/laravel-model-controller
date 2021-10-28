@@ -13,3 +13,6 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css');
+
+    // Serve a non far cambiare il path al momento del build dell'applicazione
+mix.options({processCssUrls: false});
